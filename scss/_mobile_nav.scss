@@ -1,0 +1,45 @@
+nav {
+	background: #333;
+	height: 0;
+	overflow: hidden;
+	-webkit-transition: height 0.2s linear;
+	-moz-transition: height 0.2s linear;
+	-ms-transition: height 0.2s linear;
+	-o-transition: height 0.2s linear;
+	transition: height 0.2s linear;
+
+	a, a:visited {
+		color: #fff;
+		&:hover {
+			color: #fff;
+			background: #454545;
+		}
+	}
+
+	a {
+		display: block;
+		line-height: 45px;
+		padding: 0 20px;
+		border-bottom: 1px solid #666666;
+	}
+
+}
+nav.open {
+	height: auto;
+}
+
+header {
+	position: relative;
+	border-top: solid 4px #333;
+}
+
+.toggle-menu {
+	position: absolute;
+	top: 0;
+	right: 0;
+	display: block;
+	width: 60px;
+	height: 60px;
+	background: #333333 center no-repeat;
+	background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAYAQMAAACods0NAAAAA3NCSVQICAjb4U/gAAAABlBMVEX////b2+r2DR4dAAAAAnRSTlMAiJXwxioAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAVdEVYdENyZWF0aW9uIFRpbWUAMi8yMy8xM2aXrxYAAAAcdEVYdFNvZnR3YXJlAEFkb2JlIEZpcmV3b3JrcyBDUzbovLKMAAAAFElEQVQImWP4DwQfGDBJYgAN9AIAn2g7EVkEDusAAAAASUVORK5CYII=");
+}
