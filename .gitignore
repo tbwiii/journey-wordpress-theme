@@ -1,20 +1,7 @@
-#################
-## Eclipse
-#################
+*.log
 
-*.pydevproject
-.project
-.metadata
-bin/
-tmp/
-*.tmp
-*.bak
-*.swp
-*~.nib
-local.properties
-.classpath
-.settings/
-.loadpath
+# Node Packages
+node_modules
 
 # External tool builders
 .externalToolBuilders/
@@ -63,16 +50,6 @@ local.properties
 .builds
 *.dotCover
 
-## TODO: If you have NuGet Package Restore enabled, uncomment this
-#packages/
-
-# Visual C++ cache files
-ipch/
-*.aps
-*.ncb
-*.opensdf
-*.sdf
-
 # Visual Studio profiler
 *.psess
 *.vsp
@@ -115,36 +92,12 @@ Backup*/
 UpgradeLog*.XML
 
 
-
-############
-## Windows
-############
-
 # Windows image file caches
 Thumbs.db
 
 # Folder config file
 Desktop.ini
 
-
-#############
-## Python
-#############
-
-*.py[co]
-
-# Packages
-*.egg
-*.egg-info
-dist
-build
-eggs
-parts
-bin
-var
-sdist
-develop-eggs
-.installed.cfg
 
 # Installer logs
 pip-log.txt
@@ -159,5 +112,5 @@ pip-log.txt
 #Mr Developer
 .mr.developer.cfg
 
-# Mac crap
+# Mac
 .DS_Store

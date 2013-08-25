@@ -8,6 +8,10 @@
 
 html {
 	overflow-y: scroll;
+	@include journey-mq($bp-tablet) {
+		height: 100%;
+		min-height: 100%;
+	}
 }
 
 body {
@@ -17,6 +21,12 @@ body {
 	line-height: 1.5;
 	-webkit-font-smoothing: antialiased;
 	font-smoothing: antialiased;
+
+	@include journey-mq($bp-tablet) {
+		height: 100%;
+		min-height: 100%;
+		background: url("../images/denim.png") #333333;
+	}
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -99,9 +109,17 @@ img {
 a.more-link {  }
 
 /* COMMON LAYOUT */
-header {
-	overflow: hidden;
+
+.wrap {
+	@include journey-mq( $bp-larger ) {
+		min-height: 100%;
+		height: auto;
+		width: 75%;
+		float: right;
+		background: url("../images/wood.png") #fefefe;
+	}
 }
+
 
 nav {
 	text-transform: uppercase;
@@ -151,20 +169,15 @@ nav {
 	}
 }
 
-.logo {
-	display: block;
-}
-
-.logo img{
-	max-width: 100%;
-}
-
-.mobile-logo {
-	display: none;
-}
-
 .content {
 	background: url("../images/paper.png");
+
+	@include journey-mq( $bp-larger ) {
+		padding: 20px;
+		width: 95%;
+		margin: 2.5%;
+		float: right;
+	}
 }
 
 .post.title {
@@ -178,40 +191,13 @@ nav {
 	font-style: italic;
 }
 
-.comments {
-	background: rgba( 0, 0, 0, 0.05 );
-	padding: 20px;
-}
 
-.commentlist {
-	margin: 0;
-	padding: 0;
-
-	li {
-		list-style-type: none;
-		padding: 20px;
-
-		&:nth-child( 2n + 1) {
-			background: rgba( 0, 0, 0, 0.05 );
-		}
+.entry {
+	@include journey-mq( $bp-larger ) {
+		padding: 0 20px;
 	}
 }
 
-footer {
-	background: #333;
-	padding: 0 0 40px;
-	clear: both;
-	color: #fff;
-
-}
-
-.copyright {
-	background: #454545;
-	text-align: right;
-	font-size: 70%;
-	padding: 5px 40px;
-	text-transform: uppercase;
-}
 
 
 /* POSTS */

@@ -1,0 +1,49 @@
+.sidebar {
+	@include journey-mq( $bp-larger ) {
+		width: 25%;
+		border-top: dashed 2px rgba(#FFF, 0.2);
+		padding: 0;
+		margin:  1em 0 0 0;
+		clear: left;
+	}
+}
+
+.sidebar {
+	@include journey-mq( $bp-larger ) {
+		width: 100%;
+		font-size: 85%;
+		margin: 0 auto;
+		overflow: hidden;
+		padding: 20px;
+		border-bottom: dashed 2px rgba(#FFF, 0.2);
+		color: darken(#fff, 20%);
+
+		h4 {
+			margin: 0 0 0.5em 0;
+			color: lighten(#333,40%);
+		}
+
+		ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+		}
+
+		li {
+			margin-bottom: 0.4em;
+		}
+
+		a {
+			display: block;
+		}
+
+		a, a:visited {
+			color: darken(#fff, 20%);
+			text-decoration: none;
+		}
+
+		a:hover {
+			background: rgba(#FFF, 0.2);
+		}
+	}
+}

@@ -88,8 +88,6 @@
 
 	$menus = array(
 		'main' => 'Main Menu',
-		'top' => 'Top Menu',
-		'mobile' => 'Mobile Menu',
 		'footer' => 'Footer Menu'
 	);
 	register_nav_menus( $menus );

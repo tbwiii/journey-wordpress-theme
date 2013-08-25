@@ -1,0 +1,78 @@
+header {
+
+	position: relative;
+	border-top: solid 4px #333;
+	border-bottom: #555 solid 8px;
+	overflow: hidden;
+	margin-bottom: 40px;
+
+	@include journey-mq( $bp-larger-mobile ) {
+		border-bottom: none;
+	}
+
+	@include journey-mq( $bp-tablet ) {
+		width: 25%;
+		top: 0;
+		bottom: 0;
+		float: left;
+	}
+
+}
+
+.logo {
+	display: none;
+
+	@include journey-mq( $bp-larger ) {
+		width: 160px;
+		display: block;
+		margin: 1.5em auto 0;
+	}
+
+	img {
+		max-width: 100%;
+	}
+}
+
+.mobile-logo {
+	display: block;
+	background: #333;
+	text-align: center;
+	line-height: 60px;
+	padding-right: 33px;
+
+	.cross {
+		float: left;
+		margin: 5px 0 0 5px;
+	}
+
+	.name {
+		text-align: center;
+		height: 40px;
+		width: auto;
+
+	}
+
+	@include journey-mq( $bp-larger-mobile ) {
+		display: none;
+	}
+
+}
+
+.church-name {
+	color: #fff;
+
+	@include journey-mq( $bp-larger ) {
+		margin-bottom: 1em;
+			text-transform: uppercase;
+			width: 100%;
+			min-height: 1px;
+
+			div {
+				width: 114px;
+				margin: 0 auto;
+				margin-top: -14px;
+				text-align: right;
+			}
+	}
+
+}

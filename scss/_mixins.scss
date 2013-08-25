@@ -1,0 +1,9 @@
+@mixin journey-mq($query) {
+  @if $journey-no-mq-support {
+      @content;
+  } @else {
+    @media ( 'min-width:' + $query ) {
+      @content;
+    }
+  }
+}
