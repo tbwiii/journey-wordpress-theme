@@ -324,6 +324,10 @@ header {
 /* line 61, ../scss/_header.scss */
 .church-name {
   color: #fff;
+  text-align: center;
+  font-size: 120%;
+  padding: 0.2em 0;
+  background: #2c2c2c;
 }
 @media (min-width: 1025px) {
   /* line 61, ../scss/_header.scss */
@@ -332,8 +336,10 @@ header {
     text-transform: uppercase;
     width: 100%;
     min-height: 1px;
+    padding: 0;
+    background-color: transparent;
   }
-  /* line 70, ../scss/_header.scss */
+  /* line 76, ../scss/_header.scss */
   .church-name div {
     width: 114px;
     margin: 0 auto;

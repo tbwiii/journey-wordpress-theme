@@ -60,19 +60,25 @@ header {
 
 .church-name {
 	color: #fff;
+	text-align: center;
+	font-size: 120%;
+	padding: 0.2em 0;
+	background: #2c2c2c;
 
 	@include journey-mq( $bp-larger ) {
 		margin-bottom: 1em;
-			text-transform: uppercase;
-			width: 100%;
-			min-height: 1px;
+		text-transform: uppercase;
+		width: 100%;
+		min-height: 1px;
+		padding: 0;
+		background-color: transparent;
 
-			div {
-				width: 114px;
-				margin: 0 auto;
-				margin-top: -14px;
-				text-align: right;
-			}
+		div {
+			width: 114px;
+			margin: 0 auto;
+			margin-top: -14px;
+			text-align: right;
+		}
 	}
 
 }
