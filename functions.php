@@ -34,8 +34,8 @@
 
 /* =SCRIPTS: Queue support scripts to be included in wp_head() */
 
-	add_action('wp_enqueue_scripts', 'spm_enqueue_scripts');
-	function spm_enqueue_scripts() {
+	add_action('wp_enqueue_scripts', 'journey_enqueue_scripts');
+	function journey_enqueue_scripts() {
 		$scripts = array(
 			array(
 				'handle' => 'modernizr',
@@ -84,6 +84,36 @@
 		}
 	}
 
+	add_action('wp_enqueue_scripts', 'journey_enqueue_styles');
+	function journey_enqueue_styles () {
+		$styles = array (
+			array(
+				'handle' => 'fonts',
+				'src' => 'http://fonts.googleapis.com/css?family=Lato:300:400|Open+Sans',
+				'deps' => array(),
+				'ver' => false,
+				'media' => 'screen'
+			),
+			array(
+				'handle' => 'styles',
+				'src' =>  get_template_directory_uri() . '/styles/style.css',
+				'deps' => array('fonts'),
+				'ver' => false,
+				'media' => 'screen'
+			)
+		);
+		foreach ( $styles as $style ) {
+			wp_enqueue_style(
+				$style['handle'],
+				$style['src'],
+				$style['deps'],
+				$style['ver'],
+				$style['media']
+			);
+		}
+
+	}
+
 /* =MENUS: Theme locations */
 
 	$menus = array(
@@ -101,6 +131,13 @@
 				array(
 					'key' => 'sidebar',
 					'name' => 'Sidebar',
+					'description' => 'The main widget area'
+
+				),
+				array(
+					'key' => 'footer',
+					'name' => 'Footer Widgets',
+					'description' => 'Widgets at the bottom of the page'
 				)
 			);
 			return $sidebars;

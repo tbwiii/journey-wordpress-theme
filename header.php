@@ -16,8 +16,8 @@
 </head>
 <body <?php body_class(); ?>>
 
-	<nav>
-		<?php if ( has_nav_menu( 'main' ) ) wp_nav_menu( array('theme_location' => 'main','container' => '', 'menu_class' => 'main') ); ?>
+	<nav class="main-menu">
+		<?php if ( has_nav_menu( 'main' ) ) wp_nav_menu( array('theme_location' => 'main','container' => '', 'menu_class' => '') ); ?>
 	</nav>
 	<header class="main clearfix">
 		<a class="toggle-menu" href="#"> </a>

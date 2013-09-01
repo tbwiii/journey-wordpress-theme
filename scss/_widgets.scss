@@ -1,0 +1,76 @@
+.widget {
+	margin-bottom: 2em;
+	word-wrap: break-word;
+
+	ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	li {
+		margin-bottom: 01em;
+	}
+
+	a, a:visited {
+		color: darken(#fff, 15%);
+		border-bottom: dashed 1px rgba(#fff, 0.3);
+	}
+
+	a:hover {
+		background: rgba(#FFF, 0.1);
+		text-decoration: none;
+		border: none;
+	}
+
+	.footer-widgets & {
+
+		@include journey-mq($bp-larger-mobile) {
+			width: 48%;
+			float: left;
+
+			&:nth-child(2n + 1) {
+				margin-right: 4%;
+			}
+		}
+
+		@include journey-mq($bp-larger) {
+
+			width: 32%;
+
+			&:nth-child(1n + 1) { // to override the above (2n + 1) rule
+				margin-right: 2%;
+			}
+
+			&:nth-child(3n + 3) {
+				margin-right: 0;
+			}
+		}
+
+		@include journey-mq($bp-larger-still) {
+			width: 23%;
+
+			&:nth-child(1n + 1) { // to override the above (2n + 1) rule
+				margin-right: 2.66%;
+			}
+
+			&:nth-child(4n + 4) {
+				margin-right: 0;
+			}
+		}
+	}
+}
+
+.widget-title {
+	margin: 0 0 0.5em 0;
+	color: lighten( #333,40% );
+	font-size: 1.3em;
+	background: rgba( #fff, 0.07 );
+	@include text-shadow( 1px 1px 0 #333 );
+	padding: 5px 8px;
+	border: dashed 1px #555;
+
+	.footer-widgets & {
+		color: lighten($primary, 30%);
+	}
+}

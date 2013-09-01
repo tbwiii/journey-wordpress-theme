@@ -1,3 +1,3 @@
-<section class="sidebar clearfix">
+<section class="secondary clearfix">
 	<?php dynamic_sidebar('sidebar'); ?>
 </section><!-- #sidebar -->
