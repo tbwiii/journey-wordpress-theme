@@ -36,20 +36,39 @@ h1, h2 {
 	border: dashed 1px rgba(#FFFFFF,0.2);
 }
 
-h1, .title {
+.title {
 	margin-top: -30px;
 	margin-left: -1em;
 	padding-left: 1em;
+	position: relative;
+	@include transform(rotate(-2deg));
+	font-size: 1.750em;
+	background:  $primary;
+	@include box-shadow(0 0 0px 3px #CC6700, 5px 5px 10px 0px rgba(#000, 0.5));
+
+	&:after {
+		display: block;
+		content: "";
+		position: absolute;
+		left: 0;
+		bottom: -19px;
+		width: 0;
+		height: 0;
+		border: solid 15px transparent;
+		border-right-color: darken($primary, 10%);
+		border-top: none;
+		border-left: none;
+		margin-left: 10px;
+		@include journey-mq( $bp-larger-mobile ) {
+			margin-left: -0.16em;
+		}
+
+	}
 
 	@include journey-mq( $bp-larger-mobile ) {
 		margin-left: -0.5em;
 		padding-left: 12px;
 	}
-
-	@include transform(rotate(-2deg));
-	font-size: 1.750em;
-	background:  $primary;
-	@include box-shadow(0 0 0px 3px #CC6700, 5px 5px 10px 0px rgba(#000, 0.5));
 
 	a, a:visited {
 		color: #FFFFFF;
@@ -57,7 +76,7 @@ h1, .title {
 	}
 }
 
-h2 {
+h1, h2 {
 	font-size: 1.5em;
 	background: #454545;
 	@include box-shadow(0 0 0px 3px #454545);

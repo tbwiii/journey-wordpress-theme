@@ -1,6 +1,6 @@
 footer {
 	background: #333;
-	padding: 0 0 40px;
+	padding: 0;
 	clear: both;
 	color: #fff;
 
@@ -13,7 +13,7 @@ footer {
 	text-transform: uppercase;
 }
 
-.footer-wrapper {
+.footer-widgets {
 	margin: 0 1em;
 }
 
@@ -30,10 +30,18 @@ footer {
 			content: '';
 		}
 	}
+
+	a, a:visited {
+		color: #eee;
+	}
 }
 
 .footer-menu {
 	clear: both;
+	width: 100%;
+	background: #454545;
+	line-height: 2;
+	padding: 0 1em;
 }
 
 .footer-menu-ul {
