@@ -3,6 +3,10 @@
 	padding: 20px;
 }
 
+.comments-title {
+	width: 100%;
+}
+
 .commentlist {
 	margin: 0;
 	padding: 0;
@@ -15,4 +19,13 @@
 			background: rgba( 0, 0, 0, 0.05 );
 		}
 	}
+}
+
+.post-comment-button {
+	background: $primary;
+	color: #fff;
+	font-family: 'Lato', helvetica, arial, sans-serif;
+	padding: 5px 10px;
+	border: dashed 1px rgba(#FFFFFF,0.2);
+	@include box-shadow(0 0 0px 3px #CC6700, 5px 5px 10px 0px rgba(#000, 0.5));
 }

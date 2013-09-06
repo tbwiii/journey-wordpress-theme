@@ -1,23 +1,11 @@
-$journey-no-mq-support: false !default;
-$bp-larger-mobile: 650px;
-$bp-tablet: 769px;
-$bp-larger: 1025px;
-
+@import "normalize";
 @import "compass/css3";
 @import "mixins";
 @import "base";
 @import "header";
 @import "nav";
+@import "page-content";
 @import "sidebar";
+@import "widgets";
 @import "comments";
 @import "footer";
-
-/* MEDIA ADJUSTMENTS */
-@media only screen and (max-width: 470px) {
-	@import "mobile";
-}
-
-
-@media only screen and (min-width: 1025px) {
-
-}

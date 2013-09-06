@@ -1,4 +1,4 @@
-nav {
+.main-menu {
 	background: #333;
 	height: 0;
 	overflow: hidden;
@@ -7,12 +7,26 @@ nav {
 	-ms-transition: height 0.2s linear;
 	-o-transition: height 0.2s linear;
 	transition: height 0.2s linear;
+	text-transform: uppercase;
+
+	ul > li:first-child {
+		a {
+			background: #CC6700;
+
+			&:hover {
+				background: lighten(#CC6700,5%);
+			}
+		}
+	}
 
 	a, a:visited {
 		color: #fff;
+		text-decoration: none;
+
 		&:hover {
 			color: #fff;
-			background: #454545;
+			background: #666;
+			text-decoration: none;
 		}
 	}
 
@@ -25,13 +39,6 @@ nav {
 
 	@include journey-mq( $bp-larger-mobile ) {
 		height: auto;
-	}
-
-	@include journey-mq( $bp-tablet ) {
-		float: right;
-		width: 75%;
-		font-size: 90%;
-
 		li {
 			float: left;
 			width: 16.666666667%;
@@ -47,14 +54,16 @@ nav {
 			text-align: center;
 			line-height: 40px;
 			background: #454545;
-			border-right: solid 1px #222;
-
-			&:hover {
-				color: #FFFFFF;
-				background: #666666;
-				text-decoration: none;
-			}
+			border-right: solid 1px #333;
+			border-left: solid 1px #666;
+			padding: 0;
 		}
+	}
+
+	@include journey-mq( $bp-larger ) {
+		float: right;
+		width: 75%;
+		font-size: 90%;
 	}
 
 	&.open {
@@ -64,10 +73,36 @@ nav {
 }
 
 .sub-menu {
+	display: none;
+	position: absolute;
+	z-index: 999;
+	width: auto;
+	@include box-shadow(10px 10px 10px 0 rgba(#333,0.75));
+
 	@include journey-mq( $bp-tablet ) {
 		li:hover & {
 			display: block;
 		}
+	}
+
+	li {
+		display: block;
+		float: none;
+		width: 100%;
+
+	}
+
+	a, a:visited {
+		background: #555;
+		padding: 1px 15px;
+		text-align: left;
+		border: none;
+	}
+
+	a:hover {
+		background: lighten(#555,5%);
+		border: dashed 1px lighten(#555,20%);
+		padding: 0 14px;
 	}
 }
 

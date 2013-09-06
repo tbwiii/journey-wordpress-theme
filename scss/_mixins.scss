@@ -1,3 +1,15 @@
+//Breakpoints
+$journey-no-mq-support: false !default;
+$bp-larger-mobile: 650px;
+$bp-tablet: 769px;
+$bp-larger: 1024px;
+$bp-larger-still: 1100px;
+
+// Colors
+$orange: #CC6700;
+
+$primary: $orange;
+
 @mixin journey-mq($query) {
   @if $journey-no-mq-support {
       @content;
