@@ -7,14 +7,15 @@ header {
 	margin-bottom: 40px;
 
 	@include journey-mq( $bp-larger-mobile ) {
-		border-bottom: none;
+		border: none;
 	}
 
-	@include journey-mq( $bp-tablet ) {
+	@include journey-mq( $bp-larger ) {
 		width: 25%;
 		top: 0;
 		bottom: 0;
 		float: left;
+		margin-bottom: 0;
 	}
 
 }
@@ -52,7 +53,7 @@ header {
 
 	}
 
-	@include journey-mq( $bp-larger-mobile ) {
+	@include journey-mq( $bp-larger ) {
 		display: none;
 	}
 
