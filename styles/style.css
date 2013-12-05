@@ -664,12 +664,12 @@ header {
   background: #e67400;
 }
 /* line 22, ../scss/_nav.scss */
-.main-menu a, .main-menu a:visited {
+.main-menu a, .main-menu a:visited, .main-menu .sub-menu a:first-child {
   color: #fff;
   text-decoration: none;
 }
 /* line 26, ../scss/_nav.scss */
-.main-menu a:hover, .main-menu a:visited:hover {
+.main-menu a:hover, .main-menu a:visited:hover, .main-menu .sub-menu a:first-child:hover {
   color: #fff;
   background: #666;
   text-decoration: none;
@@ -898,6 +898,23 @@ h5 {
 /* line 97, ../scss/_page-content.scss */
 h6 {
   font-size: 0.8em;
+}
+
+/* line 1, ../scss/_sermon.scss */
+.sermon-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  width: 80%;
+  margin: 0 10%;
+}
+
+/* line 8, ../scss/_sermon.scss */
+.sermon-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 /* line 1, ../scss/_sidebar.scss */

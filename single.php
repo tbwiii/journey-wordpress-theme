@@ -11,8 +11,7 @@
 					<section class="entry">
 						<?php the_content('Read more'); ?>
 					</section>
-					<?php wp_link_pages( array('before' => '<p style="clear: both;">' . __('Pages:')) ); ?>
-					<p class="postmetadata"><?php the_tags('Tags: ', ', ', '<br />'); ?> Posted in <?php the_category(', ') ?></p>
+					<?php wp_link_pages( array( 'before' => '<p style="clear: both;">' . __('Pages:') ) ); ?>
 				</article>
 				<?php comments_template(); ?>
 			<?php endwhile; ?>
