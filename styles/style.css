@@ -461,7 +461,7 @@ body {
 @media (min-width: 1100px) {
   /* line 21, ../scss/_base.scss */
   body {
-    max-width: 1680px;
+    max-width: 1280px;
     margin: 0 auto;
     -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
     -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
@@ -666,15 +666,16 @@ header {
 /* line 22, ../scss/_nav.scss */
 .main-menu a, .main-menu a:visited, .main-menu .sub-menu a:first-child {
   color: #fff;
+  background: #333;
   text-decoration: none;
 }
-/* line 26, ../scss/_nav.scss */
+/* line 27, ../scss/_nav.scss */
 .main-menu a:hover, .main-menu a:visited:hover, .main-menu .sub-menu a:first-child:hover {
   color: #fff;
   background: #666;
   text-decoration: none;
 }
-/* line 33, ../scss/_nav.scss */
+/* line 34, ../scss/_nav.scss */
 .main-menu a {
   display: block;
   line-height: 45px;
@@ -686,16 +687,16 @@ header {
   .main-menu {
     height: auto;
   }
-  /* line 42, ../scss/_nav.scss */
+  /* line 43, ../scss/_nav.scss */
   .main-menu li {
     float: left;
     width: 16.666666667%;
   }
-  /* line 48, ../scss/_nav.scss */
+  /* line 49, ../scss/_nav.scss */
   .main-menu a, .main-menu a:visited {
     color: #FFFFFF;
   }
-  /* line 52, ../scss/_nav.scss */
+  /* line 53, ../scss/_nav.scss */
   .main-menu a {
     display: block;
     text-align: center;
@@ -714,12 +715,12 @@ header {
     font-size: 90%;
   }
 }
-/* line 69, ../scss/_nav.scss */
+/* line 70, ../scss/_nav.scss */
 .main-menu.open {
   height: auto;
 }
 
-/* line 75, ../scss/_nav.scss */
+/* line 76, ../scss/_nav.scss */
 .sub-menu {
   display: none;
   position: absolute;
@@ -730,32 +731,32 @@ header {
   box-shadow: 10px 10px 10px 0 rgba(51, 51, 51, 0.75);
 }
 @media (min-width: 769px) {
-  /* line 83, ../scss/_nav.scss */
+  /* line 84, ../scss/_nav.scss */
   li:hover .sub-menu {
     display: block;
   }
 }
-/* line 88, ../scss/_nav.scss */
+/* line 89, ../scss/_nav.scss */
 .sub-menu li {
   display: block;
   float: none;
   width: 100%;
 }
-/* line 95, ../scss/_nav.scss */
+/* line 96, ../scss/_nav.scss */
 .sub-menu a, .sub-menu a:visited {
   background: #555;
   padding: 1px 15px;
   text-align: left;
   border: none;
 }
-/* line 102, ../scss/_nav.scss */
+/* line 103, ../scss/_nav.scss */
 .sub-menu a:hover {
   background: #626262;
   border: dashed 1px #888888;
   padding: 0 14px;
 }
 
-/* line 109, ../scss/_nav.scss */
+/* line 110, ../scss/_nav.scss */
 .toggle-menu {
   position: absolute;
   top: 0;
@@ -767,7 +768,7 @@ header {
   background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAYAQMAAACods0NAAAAA3NCSVQICAjb4U/gAAAABlBMVEX////b2+r2DR4dAAAAAnRSTlMAiJXwxioAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAVdEVYdENyZWF0aW9uIFRpbWUAMi8yMy8xM2aXrxYAAAAcdEVYdFNvZnR3YXJlAEFkb2JlIEZpcmV3b3JrcyBDUzbovLKMAAAAFElEQVQImWP4DwQfGDBJYgAN9AIAn2g7EVkEDusAAAAASUVORK5CYII=");
 }
 @media (min-width: 650px) {
-  /* line 109, ../scss/_nav.scss */
+  /* line 110, ../scss/_nav.scss */
   .toggle-menu {
     display: none;
   }

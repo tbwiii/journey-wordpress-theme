@@ -27,6 +27,8 @@
 
 /* =CUSTOMIZATION */
 
+	add_image_size( 'full', 960, 400, 1 );
+
 	// Post thumbnails
 
 		add_theme_support( 'post-thumbnails' );

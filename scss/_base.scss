@@ -31,7 +31,7 @@ body {
 	}
 
 	@include journey-mq($bp-larger-still) {
-		max-width: 1680px;
+		max-width: 1280px;
 		margin: 0 auto;
 		@include box-shadow(0 0 20px rgba(#000, 0.5));
 	}
