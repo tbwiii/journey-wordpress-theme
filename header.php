@@ -39,6 +39,7 @@
 	<?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
+	<div class="master-wrap">
 
 	<nav class="main-menu">
 		<?php if ( has_nav_menu( 'main' ) ) wp_nav_menu( array('theme_location' => 'main','container' => '', 'menu_class' => '') ); ?>

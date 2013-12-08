@@ -445,64 +445,47 @@ html {
 
 /* line 21, ../scss/_base.scss */
 body {
-  background: url("../images/wood.png");
   font-family: 'Open Sans', helvetica, arial, sans-serif;
   font-size: 100%;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   font-smoothing: antialiased;
 }
-@media (min-width: 1024px) {
-  /* line 21, ../scss/_base.scss */
-  body {
-    background: url("../images/denim.png") #333333;
-  }
-}
-@media (min-width: 1100px) {
-  /* line 21, ../scss/_base.scss */
-  body {
-    max-width: 1280px;
-    margin: 0 auto;
-    -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-    -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-  }
-}
 
-/* line 42, ../scss/_base.scss */
+/* line 33, ../scss/_base.scss */
 a, a:visited {
   color: #cc6700;
   text-decoration: none;
 }
 
-/* line 44, ../scss/_base.scss */
+/* line 35, ../scss/_base.scss */
 a:hover {
   text-decoration: underline;
 }
 
-/* line 46, ../scss/_base.scss */
+/* line 37, ../scss/_base.scss */
 p {
   margin: 0 0 20px;
 }
 
-/* line 50, ../scss/_base.scss */
+/* line 41, ../scss/_base.scss */
 small {
   font-size: 80%;
 }
 
-/* line 54, ../scss/_base.scss */
+/* line 45, ../scss/_base.scss */
 .wp-caption {
   max-width: 100%;
   height: auto;
 }
 
-/* line 59, ../scss/_base.scss */
+/* line 50, ../scss/_base.scss */
 img {
   max-width: 100%;
   height: auto;
 }
 
-/* line 64, ../scss/_base.scss */
+/* line 55, ../scss/_base.scss */
 .clearfix:after {
   content: ".";
   display: block;
@@ -513,27 +496,49 @@ img {
 }
 
 /* WORDPRESS */
-/* line 74, ../scss/_base.scss */
+/* line 65, ../scss/_base.scss */
 .alignleft {
   float: left;
   margin: 0 20px 0 0;
 }
 
-/* line 75, ../scss/_base.scss */
+/* line 66, ../scss/_base.scss */
 .alignright {
   float: right;
   margin: 0 0 0 20px;
 }
 
-/* line 76, ../scss/_base.scss */
+/* line 67, ../scss/_base.scss */
 .aligncenter {
   display: block;
   margin: 0 auto;
 }
 
 /* COMMON LAYOUT */
+/* line 72, ../scss/_base.scss */
+.master-wrap {
+  background: url("../images/wood.png");
+  overflow: hidden;
+}
 @media (min-width: 1024px) {
-  /* line 81, ../scss/_base.scss */
+  /* line 72, ../scss/_base.scss */
+  .master-wrap {
+    background: url("../images/denim.png") #333333;
+  }
+}
+@media (min-width: 1100px) {
+  /* line 72, ../scss/_base.scss */
+  .master-wrap {
+    max-width: 1680px;
+    margin: 0 auto;
+    -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  }
+}
+
+@media (min-width: 1024px) {
+  /* line 87, ../scss/_base.scss */
   .wrap {
     width: 75%;
     float: right;
@@ -542,7 +547,7 @@ img {
 }
 
 /* POSTS */
-/* line 91, ../scss/_base.scss */
+/* line 97, ../scss/_base.scss */
 .wp-pagenavi {
   margin: 0 0 25px;
 }
@@ -1061,7 +1066,7 @@ h6 {
 
 /* line 1, ../scss/_footer.scss */
 footer {
-  background: #333;
+  background: transparent;
   padding: 0;
   clear: both;
   color: #fff;
