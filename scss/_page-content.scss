@@ -1,3 +1,20 @@
+.home-widgets {
+	.widget-title {
+		display: none;
+	}
+
+	.widget > div {
+		padding: 1em 1em 0;
+		color: #212121;
+	}
+
+	aside {
+		@include journey-mq ( $bp-larger ) {
+			margin-bottom: -1em;
+		}
+	}
+}
+
 .content {
 	background: url("../images/paper.png");
 	margin: 0 2%;

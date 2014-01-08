@@ -517,7 +517,7 @@ img {
 /* COMMON LAYOUT */
 /* line 72, ../scss/_base.scss */
 .master-wrap {
-  background: url("../images/wood.png");
+  background: #A5997E;
   overflow: hidden;
 }
 @media (min-width: 1024px) {
@@ -542,7 +542,7 @@ img {
   .wrap {
     width: 75%;
     float: right;
-    background: url("../images/wood.png") #fefefe;
+    background: #A5997E;
   }
 }
 
@@ -779,7 +779,23 @@ header {
   }
 }
 
-/* line 1, ../scss/_page-content.scss */
+/* line 2, ../scss/_page-content.scss */
+.home-widgets .widget-title {
+  display: none;
+}
+/* line 6, ../scss/_page-content.scss */
+.home-widgets .widget > div {
+  padding: 1em 1em 0;
+  color: #212121;
+}
+@media (min-width: 1024px) {
+  /* line 11, ../scss/_page-content.scss */
+  .home-widgets aside {
+    margin-bottom: -1em;
+  }
+}
+
+/* line 18, ../scss/_page-content.scss */
 .content {
   background: url("../images/paper.png");
   margin: 0 2%;
@@ -788,7 +804,7 @@ header {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 @media (min-width: 1024px) {
-  /* line 1, ../scss/_page-content.scss */
+  /* line 18, ../scss/_page-content.scss */
   .content {
     width: 95%;
     margin: 3em 2.5% 2.5%;
@@ -796,7 +812,7 @@ header {
   }
 }
 
-/* line 12, ../scss/_page-content.scss */
+/* line 29, ../scss/_page-content.scss */
 .meta {
   color: #444;
   font-size: 85%;
@@ -804,20 +820,20 @@ header {
   font-style: italic;
 }
 
-/* line 20, ../scss/_page-content.scss */
+/* line 37, ../scss/_page-content.scss */
 .entry {
   padding: 1.25em;
   word-wrap: break-word;
 }
 
-/* line 25, ../scss/_page-content.scss */
+/* line 42, ../scss/_page-content.scss */
 h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
   font-family: 'Lato', helvetica, arial, sans-serif;
   text-transform: uppercase;
 }
 
-/* line 31, ../scss/_page-content.scss */
+/* line 48, ../scss/_page-content.scss */
 h1, h2 {
   display: inline-block;
   color: #FFFFFF;
@@ -826,7 +842,7 @@ h1, h2 {
   border: dashed 1px rgba(255, 255, 255, 0.2);
 }
 
-/* line 39, ../scss/_page-content.scss */
+/* line 56, ../scss/_page-content.scss */
 .title {
   margin-top: -30px;
   margin-left: -1em;
@@ -843,7 +859,7 @@ h1, h2 {
   -moz-box-shadow: 0 0 0px 3px #cc6700, 5px 5px 10px 0px rgba(0, 0, 0, 0.5);
   box-shadow: 0 0 0px 3px #cc6700, 5px 5px 10px 0px rgba(0, 0, 0, 0.5);
 }
-/* line 49, ../scss/_page-content.scss */
+/* line 66, ../scss/_page-content.scss */
 .title:after {
   display: block;
   content: "";
@@ -859,25 +875,25 @@ h1, h2 {
   margin-left: 10px;
 }
 @media (min-width: 650px) {
-  /* line 49, ../scss/_page-content.scss */
+  /* line 66, ../scss/_page-content.scss */
   .title:after {
     margin-left: -0.16em;
   }
 }
 @media (min-width: 650px) {
-  /* line 39, ../scss/_page-content.scss */
+  /* line 56, ../scss/_page-content.scss */
   .title {
     margin-left: -0.5em;
     padding-left: 12px;
   }
 }
-/* line 73, ../scss/_page-content.scss */
+/* line 90, ../scss/_page-content.scss */
 .title a, .title a:visited {
   color: #FFFFFF;
   text-decoration: none;
 }
 
-/* line 79, ../scss/_page-content.scss */
+/* line 96, ../scss/_page-content.scss */
 h1, h2 {
   font-size: 1.5em;
   background: #454545;
@@ -886,22 +902,22 @@ h1, h2 {
   box-shadow: 0 0 0px 3px #454545;
 }
 
-/* line 85, ../scss/_page-content.scss */
+/* line 102, ../scss/_page-content.scss */
 h3 {
   font-size: 1.2em;
 }
 
-/* line 89, ../scss/_page-content.scss */
+/* line 106, ../scss/_page-content.scss */
 h4 {
   font-size: 1em;
 }
 
-/* line 93, ../scss/_page-content.scss */
+/* line 110, ../scss/_page-content.scss */
 h5 {
   font-size: 0.895em;
 }
 
-/* line 97, ../scss/_page-content.scss */
+/* line 114, ../scss/_page-content.scss */
 h6 {
   font-size: 0.8em;
 }

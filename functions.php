@@ -131,6 +131,12 @@
 		function spm_get_sidebars() {
 			$sidebars = array(
 				array(
+					'key' => 'home_widgets',
+					'name' => 'Home Widgets',
+					'description' => 'Home page widgets'
+
+				),
+				array(
 					'key' => 'sidebar',
 					'name' => 'Sidebar',
 					'description' => 'The main widget area'

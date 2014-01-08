@@ -62,6 +62,10 @@
 	<div class="wrap clearfix content-wrapper">
 		<?php if (function_exists (journey_slideshow) && is_front_page()) {
 			journey_slideshow ();
+
+			echo '<div class="home-widgets">';
+				dynamic_sidebar('home_widgets');
+			echo "</div>";
 		}?>
 
 
