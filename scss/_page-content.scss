@@ -17,8 +17,9 @@
 
 .content {
 	background: url("../images/paper.png");
-	margin: 0 2%;
+	margin: 3em 2% 0;
 	@include box-shadow(0 0 10px rgba( #000, 0.5 ) );
+
 	@include journey-mq( $bp-larger ) {
 		width: 95%;
 		margin: 3em 2.5% 2.5%;

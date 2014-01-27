@@ -74,3 +74,15 @@
 		color: lighten($primary, 30%);
 	}
 }
+
+.home-row {
+	overflow: hidden
+}
+
+.home-col {
+	@include journey-mq($bp-larger-mobile) {
+		width: 33%;
+		float: left;
+		padding: 1em;
+	}
+}

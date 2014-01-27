@@ -102,6 +102,13 @@
 				'deps' => array('fonts'),
 				'ver' => false,
 				'media' => 'screen'
+			),
+			array(
+				'handle' => 'shame',
+				'src' =>  get_template_directory_uri() . '/shame.css',
+				'deps' => array('styles'),
+				'ver' => false,
+				'media' => 'screen'
 			)
 		);
 		foreach ( $styles as $style ) {
