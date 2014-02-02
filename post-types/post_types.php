@@ -40,7 +40,7 @@
 		array(
 			'labels' => array(
 				'name' => __('Sermons'),
-				'singular_name' => __('Sermon`'),
+				'singular_name' => __('Sermon'),
 				'add_new_item' => __('Add New Sermon'),
 				'edit_item' => __('Edit Sermon'),
 				'new_item' => __('New Sermon'),
