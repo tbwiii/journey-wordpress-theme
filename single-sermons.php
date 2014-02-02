@@ -13,14 +13,8 @@
 					<h1 class="post title"><?php the_title(); ?></h1>
 
 					<?php if ( $video_id ) : ?>
-
-					<div class="sermon-container">
-						<iframe class="sermon-video" id="ytplayer" type="text/html"
-						  src="http://www.youtube.com/embed/<?php echo $video_id ?>?origin=http://example.com" frameborder="0">
-						</iframe>
-					</div>
-
-				<?php endif; ?>
+						<?php include( locate_template( "video-module.php" )); ?>
+					<?php endif; ?>
 
 					<section class="entry">
 

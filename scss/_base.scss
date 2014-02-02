@@ -28,8 +28,6 @@ body {
 
 }
 
-
-
 a, a:visited { color: $primary; text-decoration: none;  }
 
 a:hover { text-decoration: underline; }
@@ -70,7 +68,7 @@ a.more-link {  }
 /* COMMON LAYOUT */
 
 .master-wrap {
-	background: #A5997E;
+	background: url("../images/wood-pattern-l.jpg") #A5997E;
 	overflow: hidden;
 
 	@include journey-mq($bp-larger) {
@@ -88,7 +86,7 @@ a.more-link {  }
 	@include journey-mq( $bp-larger ) {
 		width: 75%;
 		float: right;
-		background: #A5997E;
+		background: url("../images/wood-pattern-l.jpg") #A5997E;
 	}
 }
 

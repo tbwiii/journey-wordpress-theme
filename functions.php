@@ -192,4 +192,6 @@
 			</p> -->
 			<?php
 		}
+
+	require_once('post-types/journey_content.php');
 ?>

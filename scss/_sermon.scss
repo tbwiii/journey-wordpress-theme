@@ -1,14 +1,15 @@
-.sermon-container {
+.video-container {
 	position: relative;
-	padding-bottom: 56.25%;
+	padding-bottom: 45%;
 	width: 80%;
-	margin: 0 10%
+	margin: 0 10%;
+
+	iframe {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
 }
 
-.sermon-video {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-}
