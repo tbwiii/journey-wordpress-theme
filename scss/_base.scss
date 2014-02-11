@@ -8,14 +8,12 @@
 
 html {
 	overflow-y: scroll;
+	background: #222;
 	@include journey-mq($bp-tablet) {
 		height: 100%;
 		min-height: 100%;
 	}
 
-	@include journey-mq($bp-larger-still) {
-		background: url('../images/tulip.jpg');
-	}
 }
 
 body {

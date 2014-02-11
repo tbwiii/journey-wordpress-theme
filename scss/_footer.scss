@@ -1,24 +1,26 @@
 footer {
+	overflow: auto;
 	background: url('../images/tulip.jpg');
 	padding: 0;
 	clear: both;
 	color: #fff;
 
-	@include journey-mq($bp-larger-still) {
-		background: transparent;
-	}
+}
 
+.footer-wrap {
+	max-width: 1680px;
+	margin: 0 auto;
 }
 
 .copyright {
-	background: #454545;
+	background: #333;
 	text-align: right;
 	padding: 5px 40px;
 	text-transform: uppercase;
 }
 
 .footer-widgets {
-	margin: 0 1em;
+	margin: 3em 1em 0;
 }
 
 .footer-menu {
