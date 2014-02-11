@@ -12,6 +12,10 @@
 
 					<h1 class="post title"><?php the_title(); ?></h1>
 
+					<section class="meta">
+						<p>Posted on <?php the_time(get_option('date_format')); ?></p>
+					</section>
+
 					<?php if ( $video_id ) : ?>
 						<?php include( locate_template( "video-module.php" )); ?>
 					<?php endif; ?>

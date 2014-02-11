@@ -10,7 +10,7 @@
 				<article <?php post_class() ?> id="post-<?php the_ID(); ?>">
 					<h1 class="post title"><?php the_title(); ?></h1>
 					<section class="meta">
-						<small><?php the_time(get_option('date_format')); ?> by <?php the_author() ?> </small>
+						<p><?php the_time(get_option('date_format')); ?> by <?php the_author() ?></p>
 					</section>
 
 					<?php if ( $video_id ) : ?>

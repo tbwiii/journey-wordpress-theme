@@ -28,14 +28,16 @@
 }
 
 .meta {
-	color: #444;
+	color: #555;
 	font-size: 85%;
 	margin: 0.75em 0 1.5em;
 	font-style: italic;
+	margin: 0 2% 0;
 }
 
 
 .entry {
+	margin-bottom: 2em;
 	padding: 1.25em;
 	word-wrap: break-word;
 }
@@ -59,7 +61,7 @@ h1, h2 {
 	margin-left: -1em;
 	padding-left: 1em;
 	position: relative;
-	@include transform(rotate(-2deg));
+	@include transform(rotate(-0.5deg));
 	font-size: 1.750em;
 	background:  $primary;
 	@include box-shadow(0 0 0px 3px #CC6700, 5px 5px 10px 0px rgba(#000, 0.5));

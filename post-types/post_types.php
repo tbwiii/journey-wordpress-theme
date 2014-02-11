@@ -14,7 +14,7 @@
 			),
 			'public' => true,
 			'menu_position' => 2,
-			'menu_icon' => plugins_url( 'images/hero_icon.png', __FILE__ ),
+			'menu_icon' => get_template_directory_uri() . '/post-types/images/hero_icon.png',
 			'supports' => array('title', 'thumbnail', 'excerpt')
 		)
 	);
@@ -51,7 +51,7 @@
 			),
 			'public' => true,
 			'menu_position' => 2,
-			'menu_icon' => plugins_url( 'images/sermon_icon.png', __FILE__ ),
+			'menu_icon' => get_template_directory_uri() . '/post-types/images/sermon_icon.png',
 			'supports' => array('title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments', 'revisions', 'page-attributes')
 		)
 	);
@@ -72,7 +72,9 @@ register_taxonomy( 'sermon_cat',
 		'show_admin_column' => true,
 		'show_ui' => true,
 		'query_var' => true,
-		'rewrite' => array( 'slug' => 'custom-slug' ),
+		'rewrite' => array(
+			'slug' => 'series'
+		),
 	)
 );
 
@@ -81,8 +83,8 @@ add_action( 'admin_head', 'journey_post_icons' );
 function journey_post_icons() {
     ?>
     <style type="text/css" media="screen">
-			#icon-edit.icon32-posts-sermons {background: url(<?php echo plugins_url( 'images/sermon_icon_large.png' , __FILE__ ) ?>) no-repeat;}
-			#icon-edit.icon32-posts-hero_slides {background: url(<?php echo plugins_url( 'images/hero_icon_large.png' , __FILE__ ) ?>) no-repeat;}
+			#icon-edit.icon32-posts-sermons {background: url(<?php echo get_template_directory_uri() . '/images/sermon_icon_large.png' ?>) no-repeat;}
+			#icon-edit.icon32-posts-hero_slides {background: url(<?php echo get_template_directory_uri() .'/images/hero_icon_large.png' ?>) no-repeat;}
 
 			<?php
 				global $typenow; if ($typenow=="hero_slides") { ?>
