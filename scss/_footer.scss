@@ -3,6 +3,7 @@ footer {
 	padding: 0;
 	clear: both;
 	color: #fff;
+	overflow: auto;
 
 	@include journey-mq($bp-larger-still) {
 		background: transparent;

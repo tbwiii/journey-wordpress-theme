@@ -1,6 +1,6 @@
 //Breakpoints
 $journey-no-mq-support: false !default;
-$bp-larger-mobile: 650px;
+$bp-larger-mobile: 769px; // setting this  from 650px to the same size as tablet to effectively nullify those views
 $bp-tablet: 769px;
 $bp-larger: 1024px;
 $bp-larger-still: 1100px;
